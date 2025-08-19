@@ -1,0 +1,14 @@
+<app-nav></app-nav>
+<div class="container mx-auto p-4">
+  <app-classificacio [classificacio]="classificacio"></app-classificacio>
+  <h2 class="text-xl font-semibold mt-6 mb-2">Aparellaments</h2>
+  <app-aparellaments [aparellaments]="aparellaments"></app-aparellaments>
+  <h2 class="text-xl font-semibold mt-6 mb-2">Partides</h2>
+  <app-partides [partides]="partides"></app-partides>
+  <h2 class="text-xl font-semibold mt-6 mb-2">Nova partida</h2>
+  <app-formulari-partida (submitPartida)="desarPartida($event)"></app-formulari-partida>
+  <h2 class="text-xl font-semibold mt-6 mb-2">Assistència a la trobada</h2>
+  <app-assistencia-trobada (confirmaAssistencia)="desarAssistencia($event)"></app-assistencia-trobada>
+  <h2 class="text-xl font-semibold mt-6 mb-2">Perfil</h2>
+  <app-perfil [jugador]="jugadorDesat"></app-perfil>
+</div>

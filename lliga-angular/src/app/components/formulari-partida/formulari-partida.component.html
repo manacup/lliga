@@ -1,0 +1,33 @@
+<form (ngSubmit)="enviar()" class="space-y-4">
+  <div class="grid grid-cols-2 gap-4">
+    <div>
+      <label>Jugador 1</label>
+      <input type="text" [(ngModel)]="partida.jugador1" name="jugador1" required class="border p-2 w-full" />
+      <label>Puntuació</label>
+      <input type="number" [(ngModel)]="partida.puntuacio_1" name="puntuacio_1" required class="border p-2 w-full" />
+      <label>Scrabbles</label>
+      <input type="number" [(ngModel)]="partida.scrabbles_1" name="scrabbles_1" required class="border p-2 w-full" />
+      <label>Millor jugada</label>
+      <input type="text" [(ngModel)]="partida.mot_1" name="mot_1" class="border p-2 w-full" />
+      <label>Punts millor jugada</label>
+      <input type="number" [(ngModel)]="partida.puntsmot_1" name="puntsmot_1" class="border p-2 w-full" />
+    </div>
+    <div>
+      <label>Jugador 2</label>
+      <input type="text" [(ngModel)]="partida.jugador2" name="jugador2" required class="border p-2 w-full" />
+      <label>Puntuació</label>
+      <input type="number" [(ngModel)]="partida.puntuacio_2" name="puntuacio_2" required class="border p-2 w-full" />
+      <label>Scrabbles</label>
+      <input type="number" [(ngModel)]="partida.scrabbles_2" name="scrabbles_2" required class="border p-2 w-full" />
+      <label>Millor jugada</label>
+      <input type="text" [(ngModel)]="partida.mot_2" name="mot_2" class="border p-2 w-full" />
+      <label>Punts millor jugada</label>
+      <input type="number" [(ngModel)]="partida.puntsmot_2" name="puntsmot_2" class="border p-2 w-full" />
+    </div>
+  </div>
+  <div>
+    <label>Ronda</label>
+    <input type="number" [(ngModel)]="partida.ronda" name="ronda" required class="border p-2 w-full" />
+  </div>
+  <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Desar partida</button>
+</form>

@@ -1,0 +1,24 @@
+<table class="min-w-full table-auto">
+  <thead>
+    <tr>
+      <th>Jugador</th>
+      <th>Punts</th>
+      <th>Diferencial</th>
+      <th>Mitjana</th>
+      <th>Scrabbles</th>
+      <th>Millor jugada</th>
+      <th>Punts millor jugada</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of classificacio">
+      <td>{{c.jugador.nom}}</td>
+      <td>{{c.punts}}</td>
+      <td>{{c.diferencial}}</td>
+      <td>{{c.mitjana | number:'1.0-2'}}</td>
+      <td>{{c.scrabbles}}</td>
+      <td>{{c.millorJugada}}</td>
+      <td>{{c.puntsMillorJugada}}</td>
+    </tr>
+  </tbody>
+</table>

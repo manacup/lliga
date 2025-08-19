@@ -1,0 +1,8 @@
+<div class="grid grid-cols-1 gap-4">
+  <div *ngFor="let p of partides" class="p-2 border rounded">
+    <span>Ronda {{p.ronda}}: {{p.jugador1}} ({{p.puntuacio_1}}/{{p.scrabbles_1}}) vs {{p.jugador2}} ({{p.puntuacio_2}}/{{p.scrabbles_2}})</span>
+    <div>Millor jugada: {{p.mot_1}} ({{p.puntsmot_1}}), {{p.mot_2}} ({{p.puntsmot_2}})</div>
+    <div *ngIf="p.full"><img [src]="p.full" alt="Full anotacions" class="w-32" /></div>
+    <div *ngIf="p.tauler"><img [src]="p.tauler" alt="Tauler" class="w-32" /></div>
+  </div>
+</div>

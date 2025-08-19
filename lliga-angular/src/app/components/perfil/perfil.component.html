@@ -1,0 +1,14 @@
+<div *ngIf="jugador" class="p-4 border rounded">
+  <div class="flex items-center mb-4">
+    <img [src]="jugador.imatge || '/icons/Imatge-default.jpg'" alt="Imatge" class="w-16 h-16 rounded-full mr-4" />
+    <div>
+      <h2 class="text-xl font-bold">{{jugador.nom}}</h2>
+      <div class="text-gray-600">{{jugador.malnom2}}</div>
+    </div>
+  </div>
+  <div class="mb-2">Campionats: {{jugador.campionats}}</div>
+  <div class="mb-2">Podis: {{jugador.podis}}</div>
+  <div class="mb-2">Diplomes: {{jugador.diplomes}}</div>
+  <div class="mb-2">Posició: {{jugador.Posicio}}</div>
+  <div class="mb-2">Descripció: {{jugador.Descripcio}}</div>
+</div>
